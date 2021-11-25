@@ -1,5 +1,5 @@
 #!/bin/bash 
-wget https://download.nextcloud.com/server/releases/nextcloud-21.0.1.zip
+wget https://download.nextcloud.com/server/releases/nextcloud-22.2.3.zip
 
 sudo apt install unzip -y
 
