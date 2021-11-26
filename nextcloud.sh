@@ -15,7 +15,7 @@ sudo mysql -e "GRANT ALL PRIVILEGES ON nextcloud.* to 'nextclouduser'@'localhost
  
 sudo mysql -e "FLUSH PRIVILEGES"
 
-read -r "Enter IP:" Ip
+read -p "Enter IP:" Ip
 
 sudo rm -r /etc/nginx/conf.d/nextcloud.conf
 
