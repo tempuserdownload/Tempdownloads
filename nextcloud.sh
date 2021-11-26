@@ -3,10 +3,9 @@ wget https://download.nextcloud.com/server/releases/nextcloud-22.2.3.zip
 
 sudo apt install unzip -y
 
-sudo unzip nextcloud-21.0.1.zip -d /usr/share/nginx/
+sudo unzip nextcloud-22.2.3.zip -d /usr/share/nginx/
 
 sudo chown www-data:www-data /usr/share/nginx/nextcloud/ -R
-
 
 sudo mysql -e "CREATE DATABASE IF NOT EXISTS nextcloud"
 
@@ -16,7 +15,7 @@ sudo mysql -e "GRANT ALL PRIVILEGES ON nextcloud.* to 'nextclouduser'@'localhost
  
 sudo mysql -e "FLUSH PRIVILEGES"
 
-read -r "Enter IP: " Ip
+read -r "Enter IP:" Ip
 
 sudo rm -r /etc/nginx/conf.d/nextcloud.conf
 
