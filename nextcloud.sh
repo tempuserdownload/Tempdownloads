@@ -150,3 +150,6 @@ sudo apt install php-ldap
 
 sudo sed -i 's/memory_limit = 128M/memory_limit = 512M/g' /etc/php/7.4/fpm/php.ini
 
+sudo systemctl reload php7.4-fpm
+
+
