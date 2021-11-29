@@ -148,3 +148,5 @@ sudo chown www-data:www-data /usr/share/nginx/nextcloud-data -R
 
 sudo apt install php-ldap
 
+sudo sed -i 's/memory_limit = 128M/memory_limit = 512M/g' /etc/php/7.4/fpm/php.ini
+
