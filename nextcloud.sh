@@ -146,10 +146,16 @@ sudo mkdir /usr/share/nginx/nextcloud-data
 
 sudo chown www-data:www-data /usr/share/nginx/nextcloud-data -R
 
-sudo apt install php-ldap
+sudo apt install php-ldap -y
 
 sudo sed -i 's/memory_limit = 128M/memory_limit = 512M/g' /etc/php/7.4/fpm/php.ini
+sudo sed -i 's/;clear_env = no/clear_env = no/g' /etc/php/7.4/fpm/pool.d/www.conf
+sudo sed -i 's/upload_max_filesize = 2M/upload_max_filesize = 1024M/g' /etc/php/7.4/fpm/php.ini
 
 sudo systemctl reload php7.4-fpm
+
+sudo apt install redis-server -y
+
+sudo apt install php-redis -y
 
 
