@@ -99,8 +99,5 @@ sudo wget https://github.com/nextcloud/documentserver_community/releases/downloa
 tar -zxvf documentserver_community.tar.gz
 rm documentserver_community.tar.gz
 
-sudo chown -R www-data:www-data /var/www/nextcloud/
-cd /var/www/nextcloud/
-sudo -u www-data php /var/www/nextcloud/occ
-sudo -u www-data php occ app:install onlyoffice
+
 
