@@ -96,8 +96,12 @@ sudo systemctl reload php7.4-fpm
 
 cd /var/www/nextcloud/apps
 sudo wget https://github.com/nextcloud/documentserver_community/releases/download/v0.1.11/documentserver_community.tar.gz
-tar -zxvf documentserver_community.tar.gz
-rm documentserver_community.tar.gz
+sudo tar -zxvf documentserver_community.tar.gz
+sudo rm documentserver_community.tar.gz
 
+sudo -u www-data php occ maintenance:install --database "mysql" --database-name "nextcloud" --database-user "nextclouduser" --database-pass "Password01" --admin-user "admin" --admin-pass "Password01"
+sudo -u www-data php occ config:system:set trusted_domains 1 –"*"
+
+sudo -u www-data php occ app:install onlyoffice
 
 
