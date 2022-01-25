@@ -93,3 +93,8 @@ sudo chown www-data:www-data /var/www/nextcloud-data -R
 sudo sed -i 's/memory_limit = 128M/memory_limit = 512M/g' /etc/php/7.4/apache2/php.ini
 sudo systemctl reload php7.4-fpm
 
+
+cd /var/www/nextcloud/app
+wget https://github.com/nextcloud/documentserver_community/releases/download/v0.1.11/documentserver_community.tar.gz
+tar -zxvf documentserver_community.tar.gz
+rm documentserver_community.tar.gz
