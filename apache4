@@ -98,3 +98,7 @@ cd /var/www/nextcloud/app
 wget https://github.com/nextcloud/documentserver_community/releases/download/v0.1.11/documentserver_community.tar.gz
 tar -zxvf documentserver_community.tar.gz
 rm documentserver_community.tar.gz
+sudo -u www-data php /var/www/nextcloud/occ
+
+sudo -u www-data php occ app:install onlyoffice
+
