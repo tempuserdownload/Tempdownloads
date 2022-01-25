@@ -99,6 +99,7 @@ sudo wget https://github.com/nextcloud/documentserver_community/releases/downloa
 sudo tar -zxvf documentserver_community.tar.gz
 sudo rm documentserver_community.tar.gz
 
+cd /var/www/nextcloud/
 sudo -u www-data php occ maintenance:install --database "mysql" --database-name "nextcloud" --database-user "nextclouduser" --database-pass "Password01" --admin-user "admin" --admin-pass "Password01"
 sudo -u www-data php occ config:system:set trusted_domains 1 –"*"
 
