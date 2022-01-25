@@ -95,7 +95,7 @@ sudo systemctl reload php7.4-fpm
 
 
 cd /var/www/nextcloud/apps
-wget https://github.com/nextcloud/documentserver_community/releases/download/v0.1.11/documentserver_community.tar.gz
+sudo wget https://github.com/nextcloud/documentserver_community/releases/download/v0.1.11/documentserver_community.tar.gz
 tar -zxvf documentserver_community.tar.gz
 rm documentserver_community.tar.gz
 
