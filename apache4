@@ -52,8 +52,8 @@ sudo mysql -e "GRANT ALL PRIVILEGES ON nextcloud.* to 'nextclouduser'@'localhost
 sudo mysql -e "FLUSH PRIVILEGES"
 
 
-
-read -p "Enter IP:" Ip
+Ip=$(hostname -I)
+#read -p "Enter IP:" Ip
 sudo sed -i "s/$Ip/*/" /var/www/nextcloud/config/config.php
 sudo rm -r /etc/apache2/sites-available/000-default.conf
   echo "<VirtualHost *:80>
