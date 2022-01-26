@@ -23,7 +23,11 @@ sudo systemctl start mariadb
 
 sudo systemctl enable mariadb
 
-sudo mysql_secure_installation
+#sudo mysql_secure_installation
+sudo mysql -e "SET PASSWORD FOR root@localhost = PASSWORD('Password01');FLUSH PRIVILEGES;"
+sudo mysql -e "DELETE FROM mysql.user WHERE User='';"
+sudo mysql -e "DELETE FROM mysql.user WHERE User='root' AND Host NOT IN ('localhost', '127.0.0.1', '::1');"
+sudo mysql -e "DROP DATABASE test;DELETE FROM mysql.db WHERE Db='test' OR Db='test_%';"
 
 sudo apt install php7.4 php7.4-fpm php7.4-mysql php-common php7.4-cli php7.4-common php7.4-json php7.4-opcache php7.4-readline php7.4-mbstring php7.4-xml php7.4-gd php7.4-curl -y
 
