@@ -109,5 +109,5 @@ sudo -u www-data php occ config:system:set trusted_domains 1 --value="*"
 sudo -u www-data php occ app:install onlyoffice
 #hopefully that will work
 sudo -u www-data php occ app:install mail
-
+sudo -u www-data php occ app:enable documentserver_community
 
