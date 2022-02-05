@@ -107,7 +107,9 @@ cd /var/www/nextcloud/
 sudo -u www-data php occ maintenance:install --database "mysql" --database-name "nextcloud" --database-user "nextclouduser" --database-pass "Password01" --admin-user "admin" --admin-pass "Password01"
 sudo -u www-data php occ config:system:set trusted_domains 1 --value="*"
 sudo -u www-data php occ app:install onlyoffice
+sudo -u www-data php occ app:enable onlyoffice
 #hopefully that will work
 sudo -u www-data php occ app:install mail
-
-
+sudo -u www-data php occ app:enable mail
+sudo -u www-data php occ app:install calendar
+sudo -u www-data php occ app:enable calendar
