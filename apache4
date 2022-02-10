@@ -111,5 +111,11 @@ sudo -u www-data php occ app:install onlyoffice
 #hopefully that will work
 sudo -u www-data php occ app:install mail
 sudo -u www-data php occ app:enable documentserver_community
+
+
+##########
+#okay lesgo
+#code to do if u want to do it on wan under here
+#########
 sudo -u www-data php occ config:system:set onlyoffice verify_peer_off  --value=true --type bool
 sudo -u www-data php occ config:system:set allow_local_remote_servers --value true --type
