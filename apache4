@@ -116,6 +116,21 @@ sudo -u www-data php occ app:enable documentserver_community
 ##########
 #okay lesgo
 #code to do if u want to do it on wan under here
+#Go to setting > ONLYOFFICE
+# ONLYOFFICE Docs address = http://(local IP)/index.php/apps/documentserver_community/
+# this is local but you need to copy that to ONLYOFFICE Docs address for internal requests from the server
+# Replace in ONLYOFFICE Docs address your local IP to your WAN IP
+
+
+#If everything went well it should look like this
+# ONLYOFFICE Docs address
+#http://192.168.2.152/index.php/apps/documentserver_community/ 
+# (my wan)
+#ONLYOFFICE Docs address for internal requests from the server
+#http://192.168.3.10/index.php/apps/documentserver_community/
+#(my lan)
 #########
+
+
 sudo -u www-data php occ config:system:set onlyoffice verify_peer_off  --value=true --type bool
 sudo -u www-data php occ config:system:set allow_local_remote_servers --value true --type
