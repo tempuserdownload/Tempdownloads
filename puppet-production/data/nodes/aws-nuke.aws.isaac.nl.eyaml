@@ -1,0 +1,11 @@
+---
+syslocation: AWS 
+sysdescription: Debian host nuke
+account: "iO playground"
+configure_awsnuke::sender: "ray.kosterman@iodigital.com"
+configure_awsnuke::recipients: >
+   ["devops.eindhoven@iodigital.com"]
+
+include_classes:
+  - configure_awsnuke
+  - icinga2::debian_host

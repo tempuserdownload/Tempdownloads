@@ -1,0 +1,8 @@
+---
+syslocation: AWS 
+sysdescription: Windows test nscp
+account: "iO playground"
+
+include_classes:
+  - icinga2::windows_host
+

@@ -1,0 +1,8 @@
+--- 
+aws_nuke::sender: "peter.selie@iodigital.com"
+aws_nuke::recipients: ["ray.kosterman@iodigital.com", "david.hoogstraaten@iodigital.com"]
+
+telegraf::websiteurl: '"http://10.68.55.27:8086"'
+telegraf::influxtoken: "Supersecrettoken123=="
+telegraf::organization: "org"
+telegraf::bucket: "bucket"

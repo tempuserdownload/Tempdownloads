@@ -1,0 +1,24 @@
+forge 'forge.puppetlabs.com'
+
+# Base Forge Modules
+mod 'puppetlabs/stdlib'
+#mod 'puppetlabs-stdlib', '8.5.0'
+mod 'puppet-archive', '6.0.2'
+
+
+# Non Basic Forge Modules
+mod 'puppetlabs-concat', '7.2.0'
+#mod 'puppetlabs-apt', '9.0.0'
+mod 'puppetlabs-mysql', '13.0.0'
+mod 'puppetlabs-vcsrepo', '5.2.0'
+mod 'icinga-icinga', '2.8.0'
+mod 'icinga-icinga2', '3.4.0'
+mod 'icinga-icingaweb2', '3.4.1'
+mod 'puppetlabs-chocolatey', '6.2.0'
+mod 'puppetlabs-registry', '4.1.0'
+mod 'puppetlabs-powershell', '5.1.0'
+mod 'puppetlabs-pwshlib', '0.10.2'
+mod 'puppetlabs-postgresql', '8.2.1'
+mod 'puppetlabs-docker', '5.1.0'
+mod 'puppet-logrotate', '6.1.0'
+mod 'puppet-telegraf', '4.3.0'

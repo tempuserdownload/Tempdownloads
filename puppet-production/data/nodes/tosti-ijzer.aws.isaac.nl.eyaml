@@ -1,0 +1,4 @@
+---
+include_classes:
+  - configure_puppet_master
+
