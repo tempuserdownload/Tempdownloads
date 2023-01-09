@@ -1,9 +1,0 @@
----
-syslocation: AWS 
-sysdescription: Debian docker
-account: "iO playground"
-
-
-include_classes:
-  - configure_docker
-  - telegraf

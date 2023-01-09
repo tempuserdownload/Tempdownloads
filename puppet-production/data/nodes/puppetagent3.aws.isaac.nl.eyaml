@@ -1,7 +1,0 @@
----
-syslocation: AWS 
-sysdescription: Debian Puppet
-account: "iO playground"
-
-include_classes:
-  - configure_puppetmaster
